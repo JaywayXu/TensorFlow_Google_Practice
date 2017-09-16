@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="091b2a86-e0d1-4b71-a716-8ad8644393fc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter03/1. 图，张量及会话.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter03/2. 三层简单神经网络的前向传播算法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter03/3. 完整神经网络样例程序.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter04/1. 自定义损失函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter04/2. 学习率的设置.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter04/3. 正则化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter04/4. 滑动平均模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/1. MNIST读取数据.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/1. 全模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/2. 不使用正则化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/3. 不使用指数衰减的学习率.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/4. 不使用激活函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/5. 不使用隐藏层.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/2. TensorFlow训练神经网络/6. 不使用滑动平均.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/3. 变量管理.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/4.1. ckpt文件保存方法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/4.2.1 滑动平均类的保存.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/4.2.2 variables_to_restore函数的使用样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/4.3. pb文件保存方法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/MNIST_model/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/mnist_eval.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/mnist_inference.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/mnist_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/5. MNIST最佳实践/mnist_train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter05/Saved_model/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter06/1. 卷积层、池化层样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter06/2. 迁移学习.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter06/LeNet-5/LeNet5_infernece.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter06/LeNet-5/LeNet5_infernece.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter06/LeNet-5/LeNet5_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/1. TFRecord样例程序.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/2.1. TensorFlow图像处理函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/2.2. 图像预处理完整样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/3. 队列操作.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/4. 多线程队列操作.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/5. 输入文件队列.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/6. 输入数据处理框架.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter07/Records/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/1. 循环神经网络前向传播.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/2. PTB数据集介绍.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/3. 使用循环神经网络实现语言模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/4. SKlearn封装例子.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/5. 预测正弦函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter08/Models/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter09/1. 命名空间.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter09/2. 改造后的mnist_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter09/3. 监控指标可视化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter09/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/1. GPU基本操作.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/2. 多GPU并行.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/3. 分布式TensorFlow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/4. 异步更新模式样例程序.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/5. 同步更新模式样例程序.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Chapter10/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Data_sets/MNIST_data/train-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.0/Data_sets/MNIST_data/train-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter03/1. 图，张量及会话.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter03/2. 三层简单神经网络的前向传播算法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter03/3. 完整神经网络样例程序.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter04/1. 自定义损失函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter04/2. 学习率的设置.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter04/3. 正则化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter04/4. 滑动平均模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/1. MNIST读取数据.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/1. 全模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/2. 不使用正则化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/3. 不使用指数衰减的学习率.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/4. 不使用激活函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/5. 不使用隐藏层.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/2. TensorFlow训练神经网络/6. 不使用滑动平均.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/3. 变量管理.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/4.1. ckpt文件保存方法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/4.2.1 滑动平均类的保存.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/4.2.2 variables_to_restore函数的使用样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/4.3. pb文件保存方法.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/MNIST_model/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/mnist_eval.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/mnist_inference.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/mnist_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/5. MNIST最佳实践/mnist_train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter05/Saved_model/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter06/1. 卷积层、池化层样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter06/2. 迁移学习.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter06/LeNet-5/LeNet5_infernece.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter06/LeNet-5/LeNet5_infernece.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter06/LeNet-5/LeNet5_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/1. TFRecord样例程序.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/2.1. TensorFlow图像处理函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/2.2. 图像预处理完整样例.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/3. 队列操作.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/4. 多线程队列操作.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/5. 输入文件队列.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/6. 输入数据处理框架.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter07/Records/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/1. 循环神经网络前向传播.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/2. PTB数据集介绍.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/3. 使用循环神经网络实现语言模型.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/4. SKlearn封装例子.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/5. 预测正弦函数.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter08/Models/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter09/1. 命名空间.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter09/2. 改造后的mnist_train.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter09/3. 监控指标可视化.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter09/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/1. GPU基本操作.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/2. 多GPU并行.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/3. 分布式TensorFlow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/4. 异步更新模式样例程序.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/5. 同步更新模式样例程序.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Chapter10/mnist_inference.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Data_sets/MNIST_data/train-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/0.12.1/Data_sets/MNIST_data/train-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/1.0.0/Data_sets/MNIST_data/train-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Deep_Learning_with_TensorFlow/1.0.0/Data_sets/MNIST_data/train-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/DEVELOPMENT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/MANIFEST.in" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/README.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/VERSION" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/build_pip_package.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/boston_house.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/boston_predict.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/boston_test.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/boston_train.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/boston_house/train_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/import_model_half_plus_two.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/restful_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/saved_model_half_plus_two.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/test_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/half_plus_two/train_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/mnist_export.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/mnist_import.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/restful_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/test_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/mnist/train_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/ptb_caicloud_taas.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/ptb_word_lm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/reader.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/reader_test.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/test-grpc.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/ptb/train-model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/recommandation/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/recommandation/download_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/recommandation/restful_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/recommandation/train.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/recommandation/train_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/export_model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/import_model.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/restful_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/test_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/examples/two_inputs_three_outputs/train_model.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/client/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/client/grpc_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/client/restful_client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/client/serving_error.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/pb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/pb/prediction_service_pb2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/pb/prediction_service_pb2_grpc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/serving/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/templates/template-raw.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/contrib/learn/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/contrib/learn/experiment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/contrib/learn/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/core/runner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/dist_base/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/model_exporter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/model_importer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/caicloud/clever/tensorflow/run_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/caicloud.tensorflow/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/run_juypter.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/run_tf.sh" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1944" />
+    <option name="y" value="97" />
+    <option name="width" value="1906" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tensorflow-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tensorflow-tutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="091b2a86-e0d1-4b71-a716-8ad8644393fc" name="Default" comment="" />
+      <created>1505561700998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505561700998</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1944" y="97" width="1906" height="1047" extended-state="1" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/caicloud.tensorflow/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
