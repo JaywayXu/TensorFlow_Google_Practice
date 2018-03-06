@@ -1,6 +1,4 @@
-
-*.xml
+/datasets/
 *.DESKTOP-EOVLSII
 *.xml
-.idea/workspace.xml
-*.xml
+/.idea/
