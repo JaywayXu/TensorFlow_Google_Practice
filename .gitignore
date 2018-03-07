@@ -2,3 +2,4 @@
 *.DESKTOP-EOVLSII
 *.xml
 /.idea/
+*.ipynb
