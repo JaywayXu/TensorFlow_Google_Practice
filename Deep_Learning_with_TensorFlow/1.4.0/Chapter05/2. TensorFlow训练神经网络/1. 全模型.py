@@ -1,17 +1,5 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
-
-
-# #### 1.设置输入和输出节点的个数,配置神经网络的参数。
-
-# In[2]:
-
 
 INPUT_NODE = 784     # 输入节点
 OUTPUT_NODE = 10     # 输出节点
@@ -28,10 +16,6 @@ MOVING_AVERAGE_DECAY = 0.99
 
 
 # #### 2. 定义辅助函数来计算前向传播结果，使用ReLU做为激活函数。
-
-# In[3]:
-
-
 def inference(input_tensor, avg_class, weights1, biases1, weights2, biases2):
     # 不使用滑动平均类
     if avg_class == None:
@@ -45,10 +29,6 @@ def inference(input_tensor, avg_class, weights1, biases1, weights2, biases2):
 
 
 # #### 3. 定义训练过程。
-
-# In[4]:
-
-
 def train(mnist):
     x = tf.placeholder(tf.float32, [None, INPUT_NODE], name='x-input')
     y_ = tf.placeholder(tf.float32, [None, OUTPUT_NODE], name='y-input')
@@ -117,10 +97,6 @@ def train(mnist):
 
 
 # #### 4. 主程序入口，这里设定模型训练次数为5000次。
-
-# In[5]:
-
-
 def main(argv=None):
     mnist = input_data.read_data_sets("../../../datasets/MNIST_data", one_hot=True)
     train(mnist)
