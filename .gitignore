@@ -3,3 +3,4 @@
 *.xml
 /.idea/
 *.ipynb
+/Deep_Learning_with_TensorFlow/1.4.0/Chapter05/Saved_model/
