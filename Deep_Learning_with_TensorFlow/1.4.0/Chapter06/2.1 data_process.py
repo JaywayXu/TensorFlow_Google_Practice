@@ -1,11 +1,4 @@
-
-# coding: utf-8
-
 # ### 1. 定义需要使用到的常量
-
-# In[1]:
-
-
 import glob
 import os.path
 import numpy as np
@@ -22,12 +15,7 @@ OUTPUT_FILE = '../../datasets/flower_processed_data.npy'
 VALIDATION_PERCENTAGE = 10
 TEST_PERCENTAGE = 10
 
-
 # ### 2. 定义数据处理过程
-
-# In[2]:
-
-
 # 读取数据并将数据分割成训练数据、验证数据和测试数据。
 def create_image_lists(sess, testing_percentage, validation_percentage):
     sub_dirs = [x[0] for x in os.walk(INPUT_DATA)]
@@ -56,7 +44,7 @@ def create_image_lists(sess, testing_percentage, validation_percentage):
             file_glob = os.path.join(INPUT_DATA, dir_name, '*.' + extension)
             file_list.extend(glob.glob(file_glob))
         if not file_list: continue
-        print "processing:", dir_name
+        print ("processing:", dir_name)
         
         i = 0
         # 处理图片数据。
@@ -82,7 +70,7 @@ def create_image_lists(sess, testing_percentage, validation_percentage):
                 training_images.append(image_value)
                 training_labels.append(current_label)
             if i % 200 == 0:
-                print i, "images processed."
+                print (i, "images processed.")
         current_label += 1
     
     # 将训练数据随机打乱以获得更好的训练效果。
@@ -97,9 +85,6 @@ def create_image_lists(sess, testing_percentage, validation_percentage):
 
 
 # ### 3. 运行数据处理过程
-
-# In[3]:
-
 
 with tf.Session() as sess:
     processed_data = create_image_lists(sess, TEST_PERCENTAGE, VALIDATION_PERCENTAGE)

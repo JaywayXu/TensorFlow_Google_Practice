@@ -5,3 +5,4 @@
 *.ipynb
 /Deep_Learning_with_TensorFlow/1.4.0/Chapter05/Saved_model/
 /Deep_Learning_with_TensorFlow/1.4.0/Chapter05/5. MNIST最佳实践/MNIST_model/
+/Deep_Learning_with_TensorFlow/1.4.0/Chapter07/*.tfrecords
