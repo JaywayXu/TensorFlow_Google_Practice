@@ -1,19 +1,9 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 import tensorflow as tf
 import mnist_inference
 import os
 
 from tensorflow.contrib.tensorboard.plugins import projector
 from tensorflow.examples.tutorials.mnist import input_data
-
-
-# In[2]:
-
 
 BATCH_SIZE = 100
 LEARNING_RATE_BASE = 0.8
@@ -26,9 +16,6 @@ LOG_DIR = 'log'
 SPRITE_FILE = 'mnist_sprite.jpg'
 META_FIEL = "mnist_meta.tsv"
 TENSOR_NAME = "FINAL_LOGITS"
-
-
-# In[3]:
 
 
 def train(mnist):
@@ -77,10 +64,6 @@ def train(mnist):
     
     return final_result
 
-
-# In[4]:
-
-
 def visualisation(final_result):
     y = tf.Variable(final_result, name = TENSOR_NAME)
     summary_writer = tf.summary.FileWriter(LOG_DIR)
@@ -105,10 +88,6 @@ def visualisation(final_result):
     saver.save(sess, os.path.join(LOG_DIR, "model"), TRAINING_STEPS)
     
     summary_writer.close()
-
-
-# In[5]:
-
 
 def main(argv=None): 
     mnist = input_data.read_data_sets("../../datasets/MNIST_data", one_hot=True)
