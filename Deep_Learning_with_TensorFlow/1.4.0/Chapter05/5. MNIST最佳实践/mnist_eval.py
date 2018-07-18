@@ -56,4 +56,3 @@ if __name__ == '__main__':
     main()
 
 # After 29001 training step(s), validation accuracy = 0.9854
-# 这个程序的本意是在train的同时也运行test的程序的每10秒就会调用一次测评函数。

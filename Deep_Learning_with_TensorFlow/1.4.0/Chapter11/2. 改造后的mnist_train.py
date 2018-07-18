@@ -1,5 +1,7 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+# mnist_inference中定义的常量和前向传播的函数不需要改变，因为前向传播已经通过
+# tf.variable_scope实现了计算节点按照网络结构的划分
 import mnist_inference
 
 # #### 1. 定义神经网络的参数。
@@ -13,7 +15,7 @@ MOVING_AVERAGE_DECAY = 0.99
 
 # #### 2. 定义训练的过程并保存TensorBoard的log文件。
 def train(mnist):
-    #  输入数据的命名空间。
+    #  将处理输入数据的计算都放在名字为"input"的命名空间中
     with tf.name_scope('input'):
         x = tf.placeholder(tf.float32, [None, mnist_inference.INPUT_NODE], name='x-input')
         y_ = tf.placeholder(tf.float32, [None, mnist_inference.OUTPUT_NODE], name='y-input')
@@ -21,19 +23,19 @@ def train(mnist):
     y = mnist_inference.inference(x, regularizer)
     global_step = tf.Variable(0, trainable=False)
 
-    # 处理滑动平均的命名空间。
+    # 将处理滑动平均相关的计算都放在名为moving average 的命名空间下。
     with tf.name_scope("moving_average"):
         variable_averages = tf.train.ExponentialMovingAverage(MOVING_AVERAGE_DECAY, global_step)
         variables_averages_op = variable_averages.apply(tf.trainable_variables())  # 对可训练变量集合使用滑动平均
 
-    # 计算损失函数的命名空间。
+    # 将计算损失函数相关的计算都放在名为loss function 的命名空间下。
     with tf.name_scope("loss_function"):
         cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=tf.argmax(y_, 1))
         cross_entropy_mean = tf.reduce_mean(cross_entropy)
         # 将交叉熵加上权值的正则化
         loss = cross_entropy_mean + tf.add_n(tf.get_collection('losses'))
 
-    # 定义学习率、优化方法及每一轮执行训练的操作的命名空间。
+    # 将定义学习率、优化方法以及每一轮训练需要执行的操作都放在名字为"train_step"的命名空间下。
     with tf.name_scope("train_step"):
         learning_rate = tf.train.exponential_decay(
             LEARNING_RATE_BASE,
@@ -42,7 +44,7 @@ def train(mnist):
             staircase=True)
 
         train_step = tf.train.GradientDescentOptimizer(learning_rate).minimize(loss, global_step=global_step)
-
+        # 在反向传播的过程中更新变量的滑动平均值
         with tf.control_dependencies([train_step, variables_averages_op]):
             train_op = tf.no_op(name='train')
     # 将结果记录进log文件夹中
@@ -79,4 +81,5 @@ def main(argv=None):
 
 if __name__ == '__main__':
     main()
-# (C:\Users\cloud\AppData\Local\conda\conda\envs\py35) D:\CODE\Git\TensorFlow_Google_Practice>tensorboard --logdir=D:\CODE\Git\TensorFlow_Google_Practice\Deep_Learning_with_TensorFlow\1.4.0\Chapter11\log
+# (C:\Users\cloud\AppData\Local\conda\conda\envs\py35) D:\CODE\Git\TensorFlow_Google_Practice>
+# tensorboard --logdir=D:\CODE\Git\TensorFlow_Google_Practice\Deep_Learning_with_TensorFlow\1.4.0\Chapter11\log

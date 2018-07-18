@@ -1,9 +1,10 @@
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
+import tqdm
 
 # ####  1. 生成变量监控信息并定义生成监控信息日志的操作。
 
-SUMMARY_DIR = "log"
+SUMMARY_DIR = "log_1"
 BATCH_SIZE = 100
 TRAIN_STEPS = 3000
 
@@ -13,12 +14,21 @@ def variable_summaries(var, name):
     # 将生成监控信息的操作放在同一个命名空间下
     with tf.name_scope('summaries'):
         # 通过tf.histogram_summary函数记录张量中元素的取值分布
+        # tf.summary.histogram函数会生成一个Summary protocol buffer.
+        # 将Summary 写入TensorBoard 门志文件后，在HISTOGRAMS 栏，和
+        # DISTRIBUTION 栏下都会出现对应名称的图表。和TensorFlow 中其他操作类似，
+        # tf.summary.histogram 函数不会立刻被执行，只有当sess.run 函数明确调用这个操作时， TensorFlow
+        # 才会具正生成并输出Summary protocol buffer.
+
         tf.summary.histogram(name, var)
 
         # 计算变量的平均值，并定义生成平均值信息日志的操作，记录变量平均值信息的日志标签名
+        # 为'mean/'+name,其中mean为命名空间，/是命名空间的分隔符
         # 在相同命名空间中的监控指标会被整合到同一栏中，name则给出了当前监控指标属于哪一个变量
+
         mean = tf.reduce_mean(var)
         tf.summary.scalar('mean/' + name, mean)
+
         # 计算变量的标准差，并定义生成其日志文件的操作
         stddev = tf.sqrt(tf.reduce_mean(tf.square(var - mean)))
         tf.summary.scalar('stddev/' + name, stddev)
@@ -26,11 +36,13 @@ def variable_summaries(var, name):
 
 # #### 2. 生成一层全链接的神经网络。
 def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.nn.relu):
+    # 将同一层神经网络放在一个统一的命名空间下
     with tf.name_scope(layer_name):
         # 声明神经网络边上的权值，并调用权重监控信息日志的函数
         with tf.name_scope('weights'):
             weights = tf.Variable(tf.truncated_normal([input_dim, output_dim], stddev=0.1))
             variable_summaries(weights, layer_name + '/weights')
+
         # 声明神经网络边上的偏置，并调用偏置监控信息日志的函数
         with tf.name_scope('biases'):
             biases = tf.Variable(tf.constant(0.0, shape=[output_dim]))
@@ -42,6 +54,12 @@ def nn_layer(input_tensor, input_dim, output_dim, layer_name, act=tf.nn.relu):
         activations = act(preactivate, name='activation')
 
         # 记录神经网络节点输出在经过激活函数之后的分布。
+
+        """
+        对于layerl ，因为使用了ReLU函数作为激活函数，所以所有小于0的值部被设为了0。于是在激活后
+        的layerl/activations 图上所有的值都是大于0的。而对于layer2 ，因为没有使用激活函数，
+        所以layer2/activations 和layer2/pre_activations 一样。
+        """
         tf.summary.histogram(layer_name + '/activations', activations)
         return activations
 
@@ -61,22 +79,31 @@ def main():
     hidden1 = nn_layer(x, 784, 500, 'layer1')
     y = nn_layer(hidden1, 500, 10, 'layer2', act=tf.identity)
 
+    # 计算交叉熵并定义生成交叉熵监控日志的操作。
     with tf.name_scope('cross_entropy'):
         cross_entropy = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=y, labels=y_))
         tf.summary.scalar('cross_entropy', cross_entropy)
 
     with tf.name_scope('train'):
         train_step = tf.train.AdamOptimizer(0.001).minimize(cross_entropy)
-    # 如果在sess.run时给定的数据是训练batch,那么得到的正确率就是在当前模型在验证或者测试数据上的正确率
+
+    """
+    计算模型在当前给定数据上的正确率，并定义生成正确率监控日志的操作。如果在sess.run()
+    时给定的数据是训练batch，那么得到的正确率就是在这个训练batch上的正确率;如果
+    给定的数据为验证或者测试数据，那么得到的正确率就是在当前模型在验证或者测试数据上
+    的正确率。
+    """
     with tf.name_scope('accuracy'):
         with tf.name_scope('correct_prediction'):
             correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
         with tf.name_scope('accuracy'):
             accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
         tf.summary.scalar('accuracy', accuracy)
+
     # tf.scalar_summary,tf.histogram_summary,tf.image_summary函数都不会立即执行，需要通过sess.run来调用这些函数
-    # 因为程序重定义的写日志的操作非常多，意义调用非常麻烦，所以Tensorflow提供了tf.merge_all_summaries函数来整理所有的日志生成操作。
+    # 因为程序重定义的写日志的操作非常多，一一调用非常麻烦，所以Tensorflow提供了tf.merge_all_summaries函数来整理所有的日志生成操作。
     # 在Tensorflow程序执行的过程中只需要运行这个操作就可以将代码中定义的所有日志生成操作全部执行一次，从而将所有日志文件写入文件。
+
     merged = tf.summary.merge_all()
 
     with tf.Session() as sess:
@@ -84,7 +111,7 @@ def main():
         summary_writer = tf.summary.FileWriter(SUMMARY_DIR, sess.graph)
         tf.global_variables_initializer().run()
 
-        for i in range(TRAIN_STEPS):
+        for i in tqdm.tqdm(range(TRAIN_STEPS)):
             xs, ys = mnist.train.next_batch(BATCH_SIZE)
             # 运行训练步骤以及所有的日志生成操作，得到这次运行的日志。
             summary, _ = sess.run([merged, train_step], feed_dict={x: xs, y_: ys})
@@ -97,3 +124,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# tensorboard --logdir=D:\CODE\Git\TensorFlow_Google_Practice\Deep_Learning_with_TensorFlow\1.4.0\Chapter11\log_1

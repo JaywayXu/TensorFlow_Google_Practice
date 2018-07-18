@@ -27,6 +27,7 @@ def train(mnist):
     # y_表示正确的标签
     y_ = tf.placeholder(tf.float32, [None, LeNet5_infernece.OUTPUT_NODE], name='y-input')
 
+    # 定义L2正则化
     regularizer = tf.contrib.layers.l2_regularizer(REGULARIZATION_RATE)
     y = LeNet5_infernece.inference(x, False, regularizer)  # 表示不使用dropout,但是使用正则化
     global_step = tf.Variable(0, trainable=False)
@@ -35,9 +36,12 @@ def train(mnist):
     variable_averages = tf.train.ExponentialMovingAverage(MOVING_AVERAGE_DECAY, global_step)
     # 使用平均滑动模型
     variables_averages_op = variable_averages.apply(tf.trainable_variables())
+    # 定义交叉熵函数
     cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=y, labels=tf.argmax(y_, 1))
     cross_entropy_mean = tf.reduce_mean(cross_entropy)
+    # 将权重的L2正则化部分加到损失函数定义中
     loss = cross_entropy_mean + tf.add_n(tf.get_collection('losses'))
+    # 定义递减的学习率
     learning_rate = tf.train.exponential_decay(
         LEARNING_RATE_BASE,
         global_step,
@@ -47,6 +51,7 @@ def train(mnist):
     train_step = tf.train.GradientDescentOptimizer(learning_rate).minimize(loss, global_step=global_step)
     # with tf.control_dependencies([train_step, variables_averages_op]):
     #     train_op = tf.no_op(name='train')
+    # 在反向传播梯度下降的过程中更新变量的滑动平均值
     train_op = tf.group(train_step, variables_averages_op)
     # 初始化TensorFlow持久化类。
     saver = tf.train.Saver()
